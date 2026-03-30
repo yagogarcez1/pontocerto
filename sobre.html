@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta Tags Básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Sobre o Ponto Certo — Nossa História e Compromisso com Você</title>
+  <meta name="description" content="Conheça a história do Ponto Certo Materiais para Construção, fundado em 2002, com mais de 22 anos de experiência, equipe especializada e estrutura completa para sua obra.">
+  <meta name="keywords" content="sobre ponto certo, materiais para construção, loja de construção, história da empresa, equipe especializada">
+  <meta name="author" content="Ponto Certo da Construção">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.pontocertodaconstrucao.com.br/sobre.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.pontocertodaconstrucao.com.br/sobre.html">
+  <meta property="og:title" content="Sobre o Ponto Certo — Nossa História e Compromisso com Você">
+  <meta property="og:description" content="Mais de 22 anos construindo confiança. Conheça nossa história e compromisso com você.">
+  <meta property="og:image" content="https://placehold.co/1200x630/1E3A5F/F4C430?text=Sobre+Ponto+Certo">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.pontocertodaconstrucao.com.br/sobre.html">
+  <meta property="twitter:title" content="Sobre o Ponto Certo — Nossa História e Compromisso com Você">
+  <meta property="twitter:description" content="Mais de 22 anos construindo confiança. Conheça nossa história e compromisso com você.">
+  <meta property="twitter:image" content="https://placehold.co/1200x630/1E3A5F/F4C430?text=Sobre+Ponto+Certo">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- CSS Específico da Página Sobre -->
+  <style>
+    /* Banner Interno */
+    .banner-interno {
+      background: linear-gradient(135deg, #1a2a4a 0%, #2d4a7a 100%);
+      padding: 80px 0 60px;
+      margin-top: 80px;
+      text-align: center;
+      color: var(--cor-branco);
+    }
+
+    .banner-interno h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--cor-branco);
+    }
+
+    .banner-interno .subtitulo {
+      font-size: 1.2rem;
+      color: #FF6600;
+      font-weight: 600;
+    }
+
+    /* Seção Quem Somos */
+    .quem-somos {
+      padding: 80px 0;
+    }
+
+    .quem-somos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .quem-somos-img {
+      width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: var(--sombra-forte);
+    }
+
+    .quem-somos-texto h2 {
+      color: var(--cor-primaria);
+      margin-bottom: 20px;
+    }
+
+    .quem-somos-texto p {
+      color: var(--cor-cinza-medio);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    /* Timeline */
+    .timeline-secao {
+      padding: 80px 0;
+      background-color: #f9f9f9;
+    }
+
+    .timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: 50px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, #FF6600 0%, #FF6600 100%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .timeline-item.visivel {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-icon {
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 43px;
+      height: 43px;
+      background-color: #FF6600;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      background-color: var(--cor-branco);
+      padding: 25px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--sombra-suave);
+      margin-left: 20px;
+    }
+
+    .timeline-ano {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #FF6600;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--cor-texto);
+    }
+
+    .timeline-content p {
+      color: var(--cor-cinza-medio);
+      line-height: 1.6;
+    }
+
+    /* Números em Destaque */
+    .numeros-secao {
+      padding: 80px 0;
+      background-color: #FF6600;
+    }
+
+    .numeros-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .numero-card {
+      color: var(--cor-branco);
+    }
+
+    .numero-valor {
+      font-size: 4rem;
+      font-weight: 800;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .numero-descricao {
+      font-size: 1.1rem;
+      font-weight: 500;
+      opacity: 0.95;
+    }
+
+    /* Equipe */
+    .equipe-secao {
+      padding: 80px 0;
+    }
+
+    .equipe-secao .secao-titulo {
+      margin-bottom: 50px;
+    }
+
+    .equipe-secao .secao-titulo p {
+      max-width: 700px;
+      margin: 15px auto 0;
+    }
+
+    .equipe-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .equipe-card {
+      background-color: var(--cor-branco);
+      border-radius: var(--border-radius);
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--sombra-suave);
+      transition: var(--transicao);
+      border-bottom: 3px solid var(--cor-secundaria);
+    }
+
+    .equipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--sombra-forte);
+    }
+
+    .equipe-foto {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      border: 4px solid var(--cor-primaria);
+    }
+
+    .equipe-nome {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--cor-texto);
+    }
+
+    .equipe-especialidade {
+      color: var(--cor-cinza-medio);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .btn-ver-todos {
+      display: inline-block;
+      padding: 14px 40px;
+      background-color: var(--cor-primaria);
+      color: var(--cor-branco);
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transicao);
+    }
+
+    .btn-ver-todos:hover {
+      background-color: var(--cor-primaria-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--sombra-forte);
+    }
+
+    /* Missão, Visão e Valores */
+    .mvv-secao {
+      padding: 80px 0;
+      background-color: #f9f9f9;
+    }
+
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .mvv-card {
+      background-color: var(--cor-branco);
+      padding: 40px 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--sombra-suave);
+      text-align: center;
+      transition: var(--transicao);
+      border-top: 4px solid var(--cor-secundaria);
+    }
+
+    .mvv-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--sombra-forte);
+    }
+
+    .mvv-icon {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .mvv-card h3 {
+      color: var(--cor-primaria);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .mvv-card p {
+      color: var(--cor-cinza-medio);
+      line-height: 1.7;
+    }
+
+    .mvv-card ul {
+      text-align: left;
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .mvv-card ul li {
+      color: var(--cor-cinza-medio);
+      margin-bottom: 10px;
+      line-height: 1.6;
+      list-style-type: disc;
+    }
+
+    /* CTA Final */
+    .cta-final {
+      background: linear-gradient(135deg, #1a2a4a 0%, #2d4a7a 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      color: var(--cor-branco);
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta-final p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-whatsapp-grande {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 45px;
+      background-color: var(--cor-verde-whatsapp);
+      color: var(--cor-branco);
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: var(--transicao);
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-whatsapp-grande:hover {
+      background-color: var(--cor-verde-whatsapp-hover);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .btn-whatsapp-grande svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER FIXO COM NOVO DESIGN
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="header-content">
+      <!-- LADO ESQUERDO - LOGO -->
+      <div class="header-left">
+        <a href="index.html" class="logo" aria-label="Ponto Certo da Construção - Página Inicial">
+          <img src="imagens/logo.png" alt="Logo Ponto Certo da Construção" class="logo-img">
+        </a>
+      </div>
+
+      <!-- LADO DIREITO - BUSCA + MENU -->
+      <div class="header-right">
+        <!-- BUSCA -->
+        <div class="header-busca">
+          <!-- Botão da lupa (visível no mobile) -->
+          <button class="busca-toggle" aria-label="Abrir busca" aria-expanded="false">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.71 20.29l-5.01-5.01C17.54 13.68 18 11.91 18 10c0-4.41-3.59-8-8-8S2 5.59 2 10s3.59 8 8 8c1.91 0 3.68-.46 5.28-1.3l5.01 5.01c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+            </svg>
+          </button>
+
+          <!-- Campo de busca -->
+          <form class="busca-form" action="catalogo.html" method="get" role="search">
+            <input type="text" class="busca-input" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+            <button type="submit" class="busca-btn" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.71 20.29l-5.01-5.01C17.54 13.68 18 11.91 18 10c0-4.41-3.59-8-8-8S2 5.59 2 10s3.59 8 8 8c1.91 0 3.68-.46 5.28-1.3l5.01 5.01c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- MENU HAMBURGUER -->
+        <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav role="navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+            <li><a href="categorias/cimento.html" class="nav-link">Categorias</a></li>
+            <li><a href="sobre.html" class="nav-link ativo">Sobre</a></li>
+            <li><a href="vendedores.html" class="nav-link">Vendedores</a></li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         SEÇÃO 1 — BANNER DO TOPO DA PÁGINA
+         ============================================ -->
+    <section class="banner-interno">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Navegação" style="margin-top: 0; background: transparent; border: none; margin-bottom: 20px;">
+          <ol class="breadcrumb-list" style="justify-content: center;">
+            <li class="breadcrumb-item"><a href="index.html" style="color: var(--cor-branco);">Home</a></li>
+            <li class="breadcrumb-separator" style="color: #FF6600;">></li>
+            <li class="breadcrumb-item" aria-current="page" style="color: #FF6600;">Sobre</li>
+          </ol>
+        </nav>
+        
+        <h1>Sobre o Ponto Certo da Construção</h1>
+        <p class="subtitulo">Mais de 22 anos construindo confiança</p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 2 — QUEM SOMOS
+         ============================================ -->
+    <section class="quem-somos secao">
+      <div class="container">
+        <div class="quem-somos-grid">
+          <div class="quem-somos-coluna">
+            <img src="imagens/fachada ponto certo.jpg" alt="Fachada da loja Ponto Certo da Construção" class="quem-somos-img" loading="lazy">
+          </div>
+          <div class="quem-somos-texto">
+            <h2>Quem Somos</h2>
+            <p>O Ponto Certo Materiais para Construção nasceu em 04 de novembro de 2002 com um único propósito: oferecer qualidade, variedade e atendimento especializado para quem constrói, reforma ou renova.</p>
+            <p>Desde o primeiro dia, nossa missão sempre foi simples — ser o parceiro de confiança de famílias, construtoras e profissionais da construção civil da nossa região.</p>
+            <p>Ao longo de mais de duas décadas, construímos nossa reputação com base em honestidade, qualidade dos produtos e compromisso com a satisfação de cada cliente. Cada obra que ajudamos a realizar é mais que uma venda — é a realização de um sonho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 3 — LINHA DO TEMPO
+         ============================================ -->
+    <section class="timeline-secao secao">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Nossa História</h2>
+          <p>Conheça os principais marcos da nossa trajetória</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Marco 1 - 2002 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">🏗️</div>
+            <div class="timeline-content">
+              <div class="timeline-ano">2002</div>
+              <h3>Fundação do Ponto Certo</h3>
+              <p>Em 04 de novembro de 2002 abrimos nossas portas com o compromisso de servir nossa região com qualidade e preço justo.</p>
+            </div>
+          </div>
+
+          <!-- Marco 2 - 2019 -->
+          <div class="timeline-item">
+            <div class="timeline-icon">🏪</div>
+            <div class="timeline-content">
+              <div class="timeline-ano">2019</div>
+              <h3>Reinauguração em novo endereço</h3>
+              <p>Em 04 de novembro de 2019, exatamente 17 anos após nossa fundação, reinauguramos em uma loja maior e mais moderna, pronta para atender ainda melhor.</p>
+            </div>
+          </div>
+
+          <!-- Marco 3 - Hoje -->
+          <div class="timeline-item">
+            <div class="timeline-icon">🚀</div>
+            <div class="timeline-content">
+              <div class="timeline-ano">HOJE</div>
+              <h3>Estrutura Completa e Unificada</h3>
+              <p>Hoje contamos com todos os depósitos unificados ao lado da loja, garantindo mais agilidade, estoque disponível e rapidez no seu atendimento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 4 — NÚMEROS EM DESTAQUE
+         ============================================ -->
+    <section class="numeros-secao secao">
+      <div class="container">
+        <div class="numeros-grid">
+          <div class="numero-card">
+            <span class="numero-valor" data-alvo="22">0</span>
+            <span class="numero-descricao">Anos de Mercado</span>
+          </div>
+          <div class="numero-card">
+            <span class="numero-valor" data-alvo="13">0</span>
+            <span class="numero-descricao">Vendedores Especializados</span>
+          </div>
+          <div class="numero-card">
+            <span class="numero-valor" data-alvo="1">0</span>
+            <span class="numero-descricao">Depósito Unificado</span>
+          </div>
+          <div class="numero-card">
+            <span class="numero-valor" data-alvo="100">0</span>
+            <span class="numero-descricao">% Comprometidos com Você</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 5 — NOSSA EQUIPE
+         ============================================ -->
+    <section class="equipe-secao secao">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Nossa Equipe Especializada</h2>
+          <p>Contamos com mais de 13 vendedores especializados, prontos para orientar você na escolha dos materiais certos para cada etapa da sua obra ou reforma.</p>
+        </div>
+
+        <div class="equipe-cards">
+          <!-- Vendedor 1 -->
+          <div class="equipe-card">
+            <img src="https://placehold.co/150x150/4CAF50/ffffff?text=J" alt="Foto de Josiel" class="equipe-foto" loading="lazy">
+            <h3 class="equipe-nome">Josiel</h3>
+            <p class="equipe-especialidade">Especialista em Cimento e Materiais Básicos</p>
+            <a href="https://wa.me/5511999999999?text=Olá%20Josiel!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda." class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+
+          <!-- Vendedor 2 -->
+          <div class="equipe-card">
+            <img src="https://placehold.co/150x150/2196F3/ffffff?text=W" alt="Foto de Wesley" class="equipe-foto" loading="lazy">
+            <h3 class="equipe-nome">Wesley</h3>
+            <p class="equipe-especialidade">Especialista em Elétrica e Hidráulica</p>
+            <a href="https://wa.me/5511999999999?text=Olá%20Wesley!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda." class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+
+          <!-- Vendedor 3 -->
+          <div class="equipe-card">
+            <img src="https://placehold.co/150x150/E040FB/ffffff?text=W" alt="Foto de Weslanya" class="equipe-foto" loading="lazy">
+            <h3 class="equipe-nome">Weslanya</h3>
+            <p class="equipe-especialidade">Especialista em Tintas e Acabamentos</p>
+            <a href="https://wa.me/5511999999999?text=Olá%20Weslanya!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda." class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="vendedores.html" class="btn-ver-todos">Ver todos os vendedores</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 6 — MISSÃO, VISÃO E VALORES
+         ============================================ -->
+    <section class="mvv-secao secao">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Missão, Visão e Valores</h2>
+          <p>O que nos move e nos guia todos os dias</p>
+        </div>
+
+        <div class="mvv-grid">
+          <!-- Missão -->
+          <div class="mvv-card">
+            <div class="mvv-icon">🎯</div>
+            <h3>Missão</h3>
+            <p>Fornecer materiais de construção com qualidade, variedade e preço justo, com atendimento especializado para que nossos clientes realizem suas obras com segurança e economia.</p>
+          </div>
+
+          <!-- Visão -->
+          <div class="mvv-card">
+            <div class="mvv-icon">👁️</div>
+            <h3>Visão</h3>
+            <p>Ser a loja de materiais de construção mais recomendada e confiável da região, reconhecida pela excelência no atendimento e satisfação dos clientes.</p>
+          </div>
+
+          <!-- Valores -->
+          <div class="mvv-card">
+            <div class="mvv-icon">⭐</div>
+            <h3>Valores</h3>
+            <ul>
+              <li>Honestidade e transparência</li>
+              <li>Compromisso com a qualidade</li>
+              <li>Respeito e atenção ao cliente</li>
+              <li>Agilidade na entrega</li>
+              <li>Melhoria contínua</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO 7 — CTA FINAL
+         ============================================ -->
+    <section class="cta-final secao">
+      <div class="container">
+        <h2>Venha nos conhecer ou fale com a gente agora!</h2>
+        <p>Estamos prontos para atender sua obra, do início ao fim.</p>
+        <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20mais%20sobre%20a%20Ponto%20Certo." class="btn-whatsapp-grande" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">Ponto Certo da Construção</div>
+          <p class="footer-slogan">Tudo para sua construção em um só lugar. Qualidade e preço justo há mais de 15 anos.</p>
+          <div class="redes-sociais">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="categorias/cimento.html">Categorias</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="vendedores.html">Vendedores</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="simulador.html">Simulador de Cimento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <address class="footer-endereco">
+            Av. das Construções, 1500<br>
+            Centro - São Paulo/SP<br>
+            CEP: 01234-567
+          </address>
+        </div>
+
+        <div class="footer-col">
+          <h4>Horário de Funcionamento</h4>
+          <div class="footer-horario">
+            <p><strong>Segunda a Sexta:</strong> 07h às 18h</p>
+            <p><strong>Sábado:</strong> 07h às 13h</p>
+            <p><strong>Domingo:</strong> Fechado</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2024 Ponto Certo da Construção. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       BOTÃO FLUTUANTE DO WHATSAPP
+       ============================================ -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Fale conosco!</span>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Scripts Específicos da Página Sobre -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // ==========================================
+      // ANIMAÇÃO DA TIMELINE AO ROLAR
+      // ==========================================
+      const timelineItems = document.querySelectorAll('.timeline-item');
+      
+      const timelineObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visivel');
+          }
+        });
+      }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+      });
+      
+      timelineItems.forEach(function(item) {
+        timelineObserver.observe(item);
+      });
+      
+      // ==========================================
+      // CONTADOR DE NÚMEROS ANIMADO
+      // ==========================================
+      const numerosSecao = document.querySelector('.numeros-secao');
+      const numeroValores = document.querySelectorAll('.numero-valor');
+      let numerosAnimados = false;
+      
+      const numerosObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !numerosAnimados) {
+            numerosAnimados = true;
+            
+            numeroValores.forEach(function(numero) {
+              const alvo = parseInt(numero.getAttribute('data-alvo'));
+              let atual = 0;
+              const incremento = alvo / 50;
+              const duracao = 2000; // 2 segundos
+              const intervalo = duracao / 50;
+              
+              const contador = setInterval(function() {
+                atual += incremento;
+                if (atual >= alvo) {
+                  atual = alvo;
+                  clearInterval(contador);
+                }
+                numero.textContent = Math.floor(atual) + (alvo === 100 ? '%' : '+');
+              }, intervalo);
+            });
+          }
+        });
+      }, {
+        threshold: 0.5
+      });
+      
+      if (numerosSecao) {
+        numerosObserver.observe(numerosSecao);
+      }
+      
+    });
+  </script>
+</body>
+</html>
