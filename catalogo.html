@@ -89,7 +89,7 @@
           <ul class="nav-menu" id="nav-menu">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="catalogo.html" class="nav-link ativo">Catálogo</a></li>
-            <li><a href="categorias/cimento.html" class="nav-link">Categorias</a></li>
+            <li><a href="dicas.html" class="nav-link">Dicas</a></li>
             <li><a href="sobre.html" class="nav-link">Sobre</a></li>
             <li><a href="vendedores.html" class="nav-link">Vendedores</a></li>
             <li><a href="contato.html" class="nav-link">Contato</a></li>
@@ -132,26 +132,28 @@
             <select class="filtro-select" aria-label="Filtrar por categoria">
               <option value="todos">Todas as Categorias</option>
               <option value="cimento">Cimento e Areia</option>
+              <option value="argamassas">Argamassas</option>
+              <option value="tintas">Tintas</option>
               <option value="eletrica">Elétrica</option>
               <option value="hidraulica">Hidráulica</option>
               <option value="ferramentas">Ferramentas</option>
-              <option value="tintas">Tintas</option>
               <option value="acabamentos">Acabamentos</option>
             </select>
           </div>
         </div>
         
         <!-- ============================================
-             GRID DE PRODUTOS (12 PRODUTOS)
+             GRID DE PRODUTOS (8 PRODUTOS)
              ============================================ -->
         <div class="produtos-grid">
-          <!-- Produto 1 -->
-          <div class="produto-card" data-categoria="cimento">
-            <img src="https://placehold.co/300x300/FF6600/ffffff?text=Cimento+CP-II" alt="Saco de Cimento CP-II 50kg" class="produto-imagem" loading="lazy">
+          <!-- Produto 1 - Cimento Goiás 50kg -->
+          <div class="produto-card" data-categoria="cimento" data-fabricante="Goiás">
+            <img src="imagens/produtos/cimento goias 50kg.jpg" alt="Cimento Goiás 50kg" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Cimento CP-II 50kg</h3>
-              <p class="produto-descricao">Cimento Portland composto de alta resistência</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Cimento%20CP-II%2050kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Cimento CP-II no WhatsApp">
+              <h3 class="produto-nome">Cimento Goiás 50kg</h3>
+              <p class="produto-descricao">Cimento composto de alta resistência</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Goiás</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Cimento%20Goiás%2050kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Cimento Goiás no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -159,14 +161,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 2 -->
-          <div class="produto-card" data-categoria="cimento">
-            <img src="https://placehold.co/300x300/D4A574/ffffff?text=Areia+Media" alt="Areia Média m³" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 2 - Cimento Goiás 40kg -->
+          <div class="produto-card" data-categoria="cimento" data-fabricante="Goiás">
+            <img src="imagens/produtos/cimento goias 40kg.jpg" alt="Cimento Goiás 40kg" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Areia Média (m³)</h3>
-              <p class="produto-descricao">Areia média lavada para concreto e argamassa</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Areia%20Média" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Areia Média no WhatsApp">
+              <h3 class="produto-nome">Cimento Goiás 40kg</h3>
+              <p class="produto-descricao">Cimento composto de alta resistência</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Goiás</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Cimento%20Goiás%2040kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Cimento Goiás 40kg no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -174,14 +177,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 3 -->
-          <div class="produto-card" data-categoria="tintas">
-            <img src="https://placehold.co/300x300/0066CC/ffffff?text=Tinta+Acrilica" alt="Tinta Acrílica Branca 18L" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 3 - Cimento Ciplan 42,5kg -->
+          <div class="produto-card" data-categoria="cimento" data-fabricante="Ciplan">
+            <img src="imagens/produtos/cimento ciplan 42kg.jpg" alt="Cimento Ciplan 42,5kg" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Tinta Acrílica Branca 18L</h3>
-              <p class="produto-descricao">Tinta de alta cobertura para interiores e exteriores</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Tinta%20Acrílica%20Branca%2018L" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Tinta Acrílica no WhatsApp">
+              <h3 class="produto-nome">Cimento Ciplan 42,5kg</h3>
+              <p class="produto-descricao">Cimento composto de alta resistência</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Ciplan</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Cimento%20Ciplan%2042,5kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Cimento Ciplan no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -189,14 +193,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 4 -->
-          <div class="produto-card" data-categoria="tintas">
-            <img src="https://placehold.co/300x300/CC3366/ffffff?text=Massa+Corrida" alt="Massa Corrida 25kg" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 4 - Argamassa Bella Massa AC1 -->
+          <div class="produto-card" data-categoria="argamassas" data-fabricante="Bella Massa">
+            <img src="imagens/produtos/argamassa bella massa ac1.png" alt="Argamassa Bella Massa AC1" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Massa Corrida 25kg</h3>
-              <p class="produto-descricao">Para alisar e preparar paredes internas</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Massa%20Corrida%2025kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Massa Corrida no WhatsApp">
+              <h3 class="produto-nome">Argamassa Bella Massa AC1</h3>
+              <p class="produto-descricao">Argamassa colante de alto desempenho para porcelanatos e cerâmicas.</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Bella Massa</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Argamassa%20Bella%20Massa%20AC1" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Argamassa Bella Massa AC1 no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -204,14 +209,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 5 -->
-          <div class="produto-card" data-categoria="ferramentas">
-            <img src="https://placehold.co/300x300/333333/ffffff?text=Furadeira" alt="Furadeira de Impacto 500W" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 5 - Argamassa Bella Massa AC2 -->
+          <div class="produto-card" data-categoria="argamassas" data-fabricante="Bella Massa">
+            <img src="imagens/produtos/argamassa bella massa ac2.png" alt="Argamassa Bella Massa AC2" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Furadeira de Impacto 500W</h3>
-              <p class="produto-descricao">Potência e durabilidade para sua obra</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Furadeira%20de%20Impacto%20500W" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Furadeira no WhatsApp">
+              <h3 class="produto-nome">Argamassa Bella Massa AC2</h3>
+              <p class="produto-descricao">Argamassa colante de alto desempenho para porcelanatos e cerâmicas.</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Bella Massa</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Argamassa%20Bella%20Massa%20AC2" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Argamassa Bella Massa AC2 no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -219,14 +225,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 6 -->
-          <div class="produto-card" data-categoria="ferramentas">
-            <img src="https://placehold.co/300x300/FF9900/ffffff?text=Serra+Circular" alt="Serra Circular 1200W" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 6 - Argamassa Bella Massa AC3 -->
+          <div class="produto-card" data-categoria="argamassas" data-fabricante="Bella Massa">
+            <img src="imagens/produtos/argamassa bella massa ac3.webp" alt="Argamassa Bella Massa AC3" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Serra Circular 1200W</h3>
-              <p class="produto-descricao">Cortes precisos em madeira e derivados</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Serra%20Circular%201200W" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Serra Circular no WhatsApp">
+              <h3 class="produto-nome">Argamassa Bella Massa AC3</h3>
+              <p class="produto-descricao">Argamassa colante de alto desempenho para porcelanatos e cerâmicas.</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Bella Massa</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Argamassa%20Bella%20Massa%20AC3" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Argamassa Bella Massa AC3 no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -234,14 +241,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 7 -->
-          <div class="produto-card" data-categoria="eletrica">
-            <img src="https://placehold.co/300x300/FFCC00/333333?text=Fio+Eletrico" alt="Fio Elétrico 2.5mm 100m" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 7 - Massa Corrida Kokar -->
+          <div class="produto-card" data-categoria="tintas" data-fabricante="Kokar">
+            <img src="imagens/produtos/massa corrida kokar.png" alt="Massa Corrida Kokar" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Fio Elétrico 2.5mm 100m</h3>
-              <p class="produto-descricao">Fio de cobre isolado para instalações elétricas</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Fio%20Elétrico%202.5mm" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Fio Elétrico no WhatsApp">
+              <h3 class="produto-nome">Massa Corrida Kokar</h3>
+              <p class="produto-descricao">Para alisar e preparar paredes internas.</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Kokar</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Massa%20Corrida%20Kokar" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Massa Corrida Kokar no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -249,74 +257,15 @@
               </a>
             </div>
           </div>
-          
-          <!-- Produto 8 -->
-          <div class="produto-card" data-categoria="eletrica">
-            <img src="https://placehold.co/300x300/CCCC00/333333?text=Disjuntor" alt="Disjuntor Bipolar 30A" class="produto-imagem" loading="lazy">
+
+          <!-- Produto 8 - Massa Corrida Leinertex -->
+          <div class="produto-card" data-categoria="tintas" data-fabricante="Leinertex">
+            <img src="imagens/produtos/massa corrida leinertex.png" alt="Massa Corrida Leinertex" class="produto-imagem" loading="lazy">
             <div class="produto-info">
-              <h3 class="produto-nome">Disjuntor Bipolar 30A</h3>
-              <p class="produto-descricao">Proteção para circuitos elétricos residenciais</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Disjuntor%20Bipolar%2030A" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Disjuntor no WhatsApp">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                Chamar no WhatsApp
-              </a>
-            </div>
-          </div>
-          
-          <!-- Produto 9 -->
-          <div class="produto-card" data-categoria="hidraulica">
-            <img src="https://placehold.co/300x300/00AA00/ffffff?text=Tubo+PVC" alt="Tubo PVC Soldável 25mm" class="produto-imagem" loading="lazy">
-            <div class="produto-info">
-              <h3 class="produto-nome">Tubo PVC Soldável 25mm</h3>
-              <p class="produto-descricao">Tubo para água fria, barra com 6 metros</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Tubo%20PVC%2025mm" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Tubo PVC no WhatsApp">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                Chamar no WhatsApp
-              </a>
-            </div>
-          </div>
-          
-          <!-- Produto 10 -->
-          <div class="produto-card" data-categoria="hidraulica">
-            <img src="https://placehold.co/300x300/006699/ffffff?text=Registro+Gaveta" alt="Registro Gaveta 25mm" class="produto-imagem" loading="lazy">
-            <div class="produto-info">
-              <h3 class="produto-nome">Registro Gaveta 25mm</h3>
-              <p class="produto-descricao">Registro de gaveta para controle de fluxo de água</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Registro%20Gaveta%2025mm" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Registro Gaveta no WhatsApp">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                Chamar no WhatsApp
-              </a>
-            </div>
-          </div>
-          
-          <!-- Produto 11 -->
-          <div class="produto-card" data-categoria="acabamentos">
-            <img src="https://placehold.co/300x300/996633/ffffff?text=Piso+Ceramico" alt="Piso Cerâmico 60x60cm" class="produto-imagem" loading="lazy">
-            <div class="produto-info">
-              <h3 class="produto-nome">Piso Cerâmico 60x60cm</h3>
-              <p class="produto-descricao">Porcelanato acetinado de alta resistência</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Piso%20Cerâmico%2060x60" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Piso Cerâmico no WhatsApp">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-                Chamar no WhatsApp
-              </a>
-            </div>
-          </div>
-          
-          <!-- Produto 12 -->
-          <div class="produto-card" data-categoria="acabamentos">
-            <img src="https://placehold.co/300x300/6699CC/ffffff?text=Rejunte" alt="Rejunte Acrílico 1kg" class="produto-imagem" loading="lazy">
-            <div class="produto-info">
-              <h3 class="produto-nome">Rejunte Acrílico 1kg</h3>
-              <p class="produto-descricao">Rejunte flexível e impermeável para pisos e azulejos</p>
-              <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Rejunte%20Acrílico%201kg" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Rejunte no WhatsApp">
+              <h3 class="produto-nome">Massa Corrida Leinertex</h3>
+              <p class="produto-descricao">Para alisar e preparar paredes internas.</p>
+              <p class="produto-fabricante"><strong>Fabricante:</strong> Leinertex</p>
+              <a href="https://wa.me/5594991302157?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Massa%20Corrida%20Leinertex" class="btn btn-whatsapp produto-btn" target="_blank" rel="noopener" aria-label="Consultar Massa Corrida Leinertex no WhatsApp">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
@@ -328,7 +277,7 @@
       </div>
     </section>
   </main>
-  
+
   <!-- ============================================
        FOOTER
        ============================================ -->
@@ -362,7 +311,7 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="categorias/cimento.html">Categorias</a></li>
+            <li><a href="dicas.html">Dicas</a></li>
             <li><a href="sobre.html">Sobre Nós</a></li>
             <li><a href="vendedores.html">Vendedores</a></li>
             <li><a href="contato.html">Contato</a></li>
@@ -373,9 +322,9 @@
         <div class="footer-col">
           <h4>Endereço</h4>
           <address class="footer-endereco">
-            Av. das Construções, 1500<br>
-            Centro - São Paulo/SP<br>
-            CEP: 01234-567
+            Av. Fernando Guilhon, 1014<br>
+            Emerêncio - Conceição do Araguaia/PA<br>
+            CEP: 68540-000
           </address>
         </div>
         
@@ -383,7 +332,7 @@
           <h4>Horário de Funcionamento</h4>
           <div class="footer-horario">
             <p><strong>Segunda a Sexta:</strong> 07h às 18h</p>
-            <p><strong>Sábado:</strong> 07h às 13h</p>
+            <p><strong>Sábado:</strong> 07h às 12h</p>
             <p><strong>Domingo:</strong> Fechado</p>
           </div>
         </div>
@@ -391,6 +340,7 @@
       
       <div class="footer-copyright">
         <p>&copy; 2024 Ponto Certo da Construção. Todos os direitos reservados.</p>
+        <p>CNPJ: 09.141.885/0001-13</p>
       </div>
     </div>
   </footer>
@@ -398,7 +348,7 @@
   <!-- ============================================
        BOTÃO FLUTUANTE DO WHATSAPP
        ============================================ -->
-  <a href="https://wa.me/5511999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+  <a href="https://wa.me/5594991302157?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
     </svg>

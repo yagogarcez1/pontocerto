@@ -133,9 +133,9 @@ img {
 }
 
 .logo-img {
-  height: 50px;
+  height: 60px;
   width: auto;
-  max-width: 180px;
+  max-width: 200px;
   object-fit: contain;
   display: block;
   background: transparent;
@@ -578,7 +578,15 @@ img {
 .produto-descricao {
   font-size: 0.9rem;
   color: var(--cor-cinza-medio);
+  margin-bottom: 10px;
+}
+
+.produto-fabricante {
+  font-size: 0.85rem;
+  color: var(--cor-cinza-medio);
   margin-bottom: 15px;
+  font-style: italic;
+  display: none; /* Oculto temporariamente */
 }
 
 .produto-btn {
