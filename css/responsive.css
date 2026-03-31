@@ -312,29 +312,25 @@
     padding: 25px;
   }
 
-  /* Página Sobre */
-  .sobre-imagem {
-    order: -1;
-  }
-
+  /* Página Sobre - Mobile */
   .quem-somos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 30px;
   }
 
   .quem-somos-coluna {
-    width: 100%;
+    width: 100% !important;
   }
 
   .quem-somos-img {
-    width: 100%;
+    width: 100% !important;
     height: auto;
     max-height: 400px;
     object-fit: cover;
   }
 
   .quem-somos-texto {
-    width: 100%;
+    width: 100% !important;
   }
 
   .quem-somos-texto h2 {
